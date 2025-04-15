@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2e88b5e85b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo animate__animated animate__bounce">
+          Kumar Kartikeya
+        </div>
+        <ul class="animate__animated animate__bounce">
+          <a href="#hero">
+            <li>Home</li>
+          </a>
+          <a href="#about">
+            <li>About</li>
+          </a>
+          <a href="#project">
+            <li>Projects</li>
+          </a>
+          <a href="#contact">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section id="hero">
+        <div class="container">
+          <div class="hero_image animate__animated animate__fadeInLeft">
+            <img src="images/profilepic.png" alt="hero" />
+          </div>
+          <div class="hero_content">
+            <h1>
+              <span class="hi_text">Hi</span>, I am
+              <span class="name_text">Kumar Kartikeya</span>
+            </h1>
+            <h2>Front-End React Developer</h2>
+            <a href="./assets/KartikeyaResume_2025.pdf" download>Download CV</a>
+          </div>
+        </div>
+      </section>
+      <!-- Project Section -->
+      <section id="project">
+        <h2>PROJECTS</h2>
+        <div class="container">
+          <div class="project_container">
+            <div class="grid_item">
+              <div class="card">
+                <img src="images/project1.png" alt="Project1" />
+                <a href="/Project1/index.html">
+                  <div class="card_content">
+                    <h3>Tribute Website</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="card">
+                <img src="images/Project2.png" alt="Project2" />
+                <a href="/Project2/index.html">
+                  <div class="card_content">
+                    <h3>Job Application</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="card">
+                <img src="images/project3.png" alt="Project3" />
+                <a href="/Project3/index.html">
+                  <div class="card_content">
+                    <h3>Parallax Website</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="card">
+                <img src="images/project4.png" alt="Project4" />
+                <a href="/Project4/index.html">
+                  <div class="card_content">
+                    <h3>Landing Page</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="card">
+                <img src="images/project5.png" alt="Project5" />
+                <a href="/Project5/">
+                  <div class="card_content">
+                    <h3>Restaurant Website</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="card">
+                <img src="images/project6.png" alt="Project6" />
+                <a href="/Project6/">
+                  <div class="card_content">
+                    <h3>Music Website</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="card">
+                <img src="images/project7.png" alt="Project7" />
+                <a href="/Project7/">
+                  <div class="card_content">
+                    <h3>Youtube Clone</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="card">
+                <img src="images/project8.png" alt="Project8" />
+                <a href="/Project8/index.html">
+                  <div class="card_content">
+                    <h3>Javascript Documnetation</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid_item">
+              <div class="card">
+                <img src="images/project9.png" alt="Project9" />
+                <a href="/Project9/home.html">
+                  <div class="card_content">
+                    <h3>Blog Website</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <h2 class="animate__animated animate__fadeInLeft">Get in Touch</h2>
+          <!-- <hr> -->
+          <div class="contact-container">
+            <!-- Using Web3Forms Method -->
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="contact-left"
+            >
+              <div class="contact-left-title">
+                <!-- <h2>Get in Touch</h2> -->
+                <!-- <hr> -->
+              </div>
+              <input
+                type="hidden"
+                name="access_key"
+                value="d6533091-6da1-4bc0-982c-f669ddb28b9e"
+              />
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                class="contact-inputs"
+                id="name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                class="contact-inputs"
+                id="email"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                class="contact-inputs"
+                required
+              ></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="top_contact">
+            <div class="contact_way">
+              <a href="">
+                <i class="fa-brands fa-linkedin"></i>
+                <h3>Linkedin</h3>
+              </a>
+            </div>
+            <div class="contact_way">
+              <a href="https://github.com/kartikeya5398">
+                <i class="fa-brands fa-github"></i>
+                <h3>Github</h3>
+              </a>
+            </div>
+          </div>
+          <!-- <div class="bottom_contact"> -->
+          <!-- <div class="contact_way">
+                  <i class="fa-brands fa-github"></i>
+                  <h3>Github</h3>
+                </div>
+                <div class="contact_way">
+                  <i class="fa-solid fa-phone"></i>
+                  <h3>Mobile</h3>
+                </div> -->
+          <!-- <div class="contact_way">
+                  <i class="fa-solid fa-envelope"></i>
+                  <h3>@Send Mail</h3>
+                </div> -->
+          <!-- </div> -->
+        </div>
+      </section>
+      <!-- <section id="contact">
+        <div class="container">
+
+          <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Get in Touch</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="d6533091-6da1-4bc0-982c-f669ddb28b9e">
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" id="name" required>
+                <input type="email" name="email" placeholder="Your email" class="contact-inputs" id="email" required>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        </div>
+      </section> -->
+    </main>
+    <footer>
+      <div class="container">kartikeyakumar1998@gmail.com</div>
+    </footer>
+  </body>
+</html>

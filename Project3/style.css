@@ -1,0 +1,92 @@
+
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8em;
+    color: #666;
+    /* background-color: black; */
+}
+
+.pimg1, .pimg2, .pimg3,.pimg4, .pimg5, .pimg6, .pimg7{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* for parallax effect  */
+    background-attachment: fixed;
+}
+
+/* Image1  */
+.pimg1{
+    background-image: url(/Project3/images/image1.png);
+    min-height: 100%;
+}
+.pimg2{
+    background-image: url(/Project3/images/image2.png);
+    min-height: 900px;
+}
+.pimg3{
+    background-image: url(/Project3/images/image3.png);
+    min-height: 900px;
+}
+.pimg4{
+    background-image: url(/Project3/images/image4.jpeg.jpg);
+    min-height: 900px;
+}
+.pimg5{
+    background-image: url(/Project3/images/image5.jpeg.jpg);
+    min-height: 900px;
+}
+.pimg6{
+    background-image: url(/Project3/images/image6.jpeg.jpg);
+    min-height: 900px;
+}
+.pimg7{
+    background-image: url(/Project3/images/image7.jpeg.jpg);
+    min-height: 900px;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.txtbg{
+    background-color: #313534;
+    color: #fff;
+    padding: 20px;
+}
+
+/* SectionOne Text */
+.section{
+    padding: 50px 80px;
+    text-align: center;
+}
+.section-light{
+    background-color: #f4f4f4;
+    /* background-color: #313534; */
+    color: #666;
+}
+h1{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+h1:hover{
+    text-decoration: underline;
+}
+p{
+    letter-spacing: 1px;
+}
+.section-dark{
+    /* background-color: #f4f4f4; */
+    background-color: #282e34;
+    color: #ddd;
+}

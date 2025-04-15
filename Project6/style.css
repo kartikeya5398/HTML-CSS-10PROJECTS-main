@@ -1,0 +1,369 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Foldit&family=Montserrat:wght@400;500&family=Playfair+Display&family=Playfair+Display+SC&family=REM:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    font-size: 1.6rem;
+}
+
+section{
+    scroll-margin: 5rem;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+header{
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    box-shadow: .5rem .5rem .5rem rgba(1, 1, 1, .5);
+    z-index: 99;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+    padding: 2rem 0;
+}
+.logo{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    gap: 4rem;
+}
+button{
+    padding: 1rem 1.5rem;
+    border: none;
+    transition: .2s ease-in-out;
+}
+button:hover{
+    transition: .2s ease-in-out;
+    opacity: .8;
+}
+
+nav ul li{
+    border-bottom: 3px solid transparent;
+    transition: 0.2s ease-in;
+    font-weight: 400;
+}
+nav ul li:hover{
+    border-bottom: 3px solid var(--red600);
+    transition: 0.2s ease-in;
+}
+
+/* Hero Section */
+.hero-section{
+    background-image: url(images/hero_image.png);
+    height: 100vh;
+    display: grid;
+    color: #fff;
+    place-items: center;
+    text-align: center;
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.hero-section h1{
+    font-size: 9.6rem;
+}
+.hero-section h3{
+    font-size: 3.2rem;
+}
+.hero-section p{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+/* Music Section */
+.music-section  {
+    padding-top: 5rem;
+    background-color: var(--purple500);
+}
+.music-section .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    color: #fff;
+}
+.ipad-iphone-img{
+    position: relative;
+    top: 40rem;
+    margin-top: -40rem;
+}
+.primary-btn{
+    background-color: var(--red600);
+    color: #fff;
+}
+.secondary-btn{
+    background-color: var(--purple300);
+    color: #fff;
+}
+
+.about-music{
+    padding-top: 50rem;
+    display: grid;
+    place-items: center;
+    gap: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+/* Video Section */
+.video-section{
+    background-image: url(images/video.png);
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    min-height: 90rem;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: -20rem;
+}
+.video-section .container h3{
+    letter-spacing: .1rem;
+    font-size: 2rem;
+}
+
+.hero-section, .video-section{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Gift Section */
+.gift-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 0;
+    gap: 5rem;
+}
+
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* footer   */
+.footer-upper{
+    background-color: var(--purple600);
+    padding: 2rem;
+}
+
+.footer-upper .container{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+.footer-upper h4{
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 1rem;
+    color: #d1d1d1;
+}
+.footer-lower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple300);
+    color: #fff;
+    padding: 1rem;
+}
+
+.video-section{
+    scroll-margin: 5rem;
+}
+.gift-section{
+    scroll-margin: 12rem;
+}
+
+
+/* Responsive Media */
+/* For Tablet */
+@media (max-width: 767px) {
+    html{
+        font-size: 40%;
+    }
+    nav ul{
+        display: none;
+    }
+    .logo,.menu_bar i{
+        display: block;
+        font-size: 4.5rem;
+        cursor: pointer;
+    }
+    .footer-upper .container{
+        flex-wrap: wrap;
+        gap: 2rem;
+    } 
+    .footer-upper .footer-links{
+        width: 20rem;
+    } 
+    .ipad-iphone-img img, 
+    .mac-img img
+    {
+        max-width: 100%;
+    }
+    .ipad-iphone-img{
+        position: relative;
+        top: 20rem;
+        margin-top: -20rem;
+    }
+    .gift-section{
+        flex-direction: column;
+    }
+    .gift-card img{
+        width: 100%;
+    }
+}
+
+/* For Laptop Large */
+@media (max-width:1023px){
+    .ipad-iphone-img img, 
+    .mac-img img
+    {
+        max-width: 100%;
+    }
+    .gift-card img{
+        width: 40rem;
+    }
+    .ipad-iphone-img{
+        top: 20rem;
+        margin-top: -20rem;
+        
+    }
+    .about-music{
+        padding-top: 30rem;
+    }
+}
+
+/* For Mobile large */
+@media (max-width:424px){
+    .ipad-iphone-img{
+        top: 10rem;
+        margin-top: -10rem;
+    }
+    .about-music{
+        padding-top: 15rem;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .menu_bar i{
+        display: none;
+    }    
+}
+
+/* For Hambuerger Menu Bar */
+/* .menu_mobile{
+    background: var(--purple500);
+    display: none;
+}
+.menu_mobile ul{
+    font-size: 2.2rem;
+    text-align: center;
+}
+.menu_mobile ul li{
+    padding: 1rem 0;
+    transition: .3s ease-in;
+    }
+.menu_mobile ul li:hover{
+background: #b495fc;
+color: var(--purple600);
+font-weight: 700;
+transition: .3s ease-in;
+} */
+
+
+/* For Menubar Drawer slider */
+.menu_mobile{
+    background: var(--purple500);
+    display: none;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    transform: translateX(+100vw);
+    transition: .3s ease-in;
+}
+.menu_mobile ul{
+    font-size: 2.2rem;
+    text-align: center;
+}
+.menu_mobile ul li{
+    padding: 1rem 0;
+    transition: .3s ease-in;
+    }
+.menu_mobile ul li:hover{
+background: #b495fc;
+color: var(--purple600);
+font-weight: 700;
+transition: .3s ease-in;
+}
+.close_btn_container{
+    display: flex;
+    justify-content: end;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+.show_menuBar{
+    display: block;
+    transform: translateX(0);
+    transition: .3s ease-in;
+}
+
